@@ -11,44 +11,54 @@
   <body>
     <header>title</header>
     <section>
+      <!-- this is for the selection tab-->
       <nav>
-        <!-- this is for the selection tab-->
         <ul>
           <li>
-            <button type="button" onclick="giveMeSite(clock)">
-              Digital Clock
-            </button>
+            <button type="button" onclick="giveMeSite(1)">Digital Clock</button>
           </li>
           <li>
-            <button type="button" onclick="giveMeSite(todo)">ToDo List</button>
+            <button type="button" onclick="giveMeSite(2)">ToDo List</button>
           </li>
           <li>
-            <button type="button" onclick="giveMeSite(rps)">
+            <button type="button" onclick="giveMeSite(3)">
               Rock Paper Scissors
             </button>
           </li>
           <li>
-            <button type="button" onclick="giveMeSite(vowel)">Vowel</button>
+            <button type="button" onclick="giveMeSite(4)">Vowel</button>
           </li>
           <li>
-            <button type="button" onclick="giveMeSite(note)">
-              Tote Taking
-            </button>
+            <button type="button" onclick="giveMeSite(5)">Tote Taking</button>
           </li>
         </ul>
       </nav>
-
+      <!--hidden="hidden"-->
       <div id="divers">
         <!-- div for Digital Clock-->
-        <div id="clock"><p>ayo</p></div>
+        <div id="clock" style="display: none">
+          <p>ayo</p>
+        </div>
+
         <!-- div for ToDoList-->
-        <div id="todo"></div>
+        <div id="todo" style="display: none">
+          <p>bfgneh</p>
+        </div>
+
         <!-- div for R.P.S game-->
-        <div id="rps"></div>
+        <div id="rps" style="display: none">
+          <p>opedw</p>
+        </div>
+
         <!-- div for Vowel Counter-->
-        <div id="vowel"></div>
+        <div id="vowel" style="display: none">
+          <p>njvier</p>
+        </div>
+
         <!-- div for Note Taking-->
-        <div id="note"></div>
+        <div id="note" style="display: none">
+          <p>ppppppp</p>
+        </div>
       </div>
     </section>
     <footer>
