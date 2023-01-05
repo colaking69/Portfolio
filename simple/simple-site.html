@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="scriptsheet" href="script.js" />
+    <script type="text/javascript" src="script.js"></script>
     <title>SimpleSites</title>
   </head>
   <body>
@@ -19,10 +19,22 @@
               Digital Clock
             </button>
           </li>
-          <li><a href="#">ToDo List</a></li>
-          <li><a href="#">Rock Paper Scissors</a></li>
-          <li><a href="#">Vowel</a></li>
-          <li><a href="#">Tote Taking</a></li>
+          <li>
+            <button type="button" onclick="giveMeSite(todo)">ToDo List</button>
+          </li>
+          <li>
+            <button type="button" onclick="giveMeSite(rps)">
+              Rock Paper Scissors
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="giveMeSite(vowel)">Vowel</button>
+          </li>
+          <li>
+            <button type="button" onclick="giveMeSite(note)">
+              Tote Taking
+            </button>
+          </li>
         </ul>
       </nav>
 
