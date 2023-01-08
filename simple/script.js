@@ -1,3 +1,4 @@
+//the switch between the sites
 let crt = "clock";
 let id;
 
@@ -29,4 +30,11 @@ function giveMeSite(IDfun) {
 
   mainFrameTwo.style.display =
     mainFrameTwo.style.display == "none" ? "block" : "none"; //showing the income click
+}
+
+//clock
+
+var t = setInterval(giveTime, 1000);
+function giveTime() {
+  document.getElementById("clockP").innerHTML = Date();
 }
