@@ -32,9 +32,61 @@ function giveMeSite(IDfun) {
     mainFrameTwo.style.display == "none" ? "block" : "none"; //showing the income click
 }
 
-//clock
+//clock date/time/timezone
 
-var t = setInterval(giveTime, 1000);
+var t = setInterval(giveDoTime, 1000);
+const D = new Date();
+
+function giveDoTime() {
+  giveDate();
+  giveTime();
+  giveTimeZone();
+}
+
+function giveDate() {
+  //day
+
+  let dayEnd = D.getDate();
+
+  //year
+
+  let yearEnd = D.getYear() % 100;
+
+  //month
+
+  let monthGet = D.getMonth();
+  const month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let monthEnd = month[D.getMonth()];
+
+  document.getElementById("clockDate").innerHTML =
+    dayEnd + "/" + monthEnd + "/" + yearEnd;
+}
+
 function giveTime() {
-  document.getElementById("clockP").innerHTML = Date();
+  //time(hours/min/sec)
+  const D = new Date();
+  let hour = D.getHours();
+  let min = D.getMinutes();
+  let sec = D.getSeconds();
+  document.getElementById("clockTime").innerHTML = hour + ":" + min + ":" + sec;
+}
+
+function giveTimeZone() {
+  //time zone
+
+  let timZ = D.getTimezoneOffset() / 60;
+  document.getElementById("clockTimeZone").innerHTML = "GMT" + timZ + ":00";
 }
